@@ -1,0 +1,220 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    }
+
+header{
+    background-color: #EAC926;
+    padding: 5%;}
+
+
+header div.logo{
+    padding: 10px;
+    width: 50%;
+}
+.busqueda{
+    width: 100%;
+    display: flex;
+    align-items: flex-center;
+}
+header form input{
+    color: #666;
+    padding: 2px;
+    flex-grow: 1;
+    width: 80%;
+}
+.lupa{
+    font-size: 14px;
+    background-color: #ebebeb;
+    border: 1px solid #000;
+    width: 5%;
+    display: inline;
+}
+
+.formapago{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color:blue;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+}
+
+.imgbaner{
+    margin: 0px;
+    width: 100vw;
+    box-sizing: border-box;
+    }
+.banner{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #ebebeb;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+.articulo{
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cajaArticulo{
+    border: solid 1px #ebebeb;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.imagenarticulo{
+    width: 100%;
+    height:100%;
+}
+
+.iconoArticulo{
+    color:#39b54a;
+    font-size: 1em;
+    margin:10px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    border: solid 1px #39b54a;
+    display: inline-block;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+
+h3{font-size:24px}
+
+.precio{ 
+    font-size:18px;
+    font-weight: bold;
+}
+.descuento{
+    color: #666;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section p {font-size:16px}
+
+footer{
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.iconoFooter{
+    color:blue;
+    font-size: 2em;
+    margin:40px 0px 10px 0px;
+}
+
+.copyright{
+    text-align: left;
+    font-size: 10px;
+}
+
+.descripcion {
+   display: none;  }
+
+nav{
+    display:none;
+}
+
+@media (min-width:361px){
+    .descripcion{
+        display:inline;        
+    }
+    .articulo{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    .navegadores{
+        display: inline;
+    }
+
+    div.burger-menu{
+        display:none;
+    }
+    
+}
+
+@media  (min-width: 769px) {
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .busqueda {
+        display:inline;
+        flex-grow:1;
+    }
+    .logo{
+        flex-wrap:wrap;
+        width: 20%;
+    }
+    .formapago{
+        flex-wrap:wrap;
+        width:30%;
+    }
+    .navegadores{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegador1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navegador2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navegador1 li{
+        margin: 0px 10px;
+        padding-top:15px;
+    } 
+
+    .navegador2 li{
+        margin: 0px 10px;
+        padding-top:15px;
+    }
+}
