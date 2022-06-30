@@ -1,38 +1,45 @@
 *{
     margin:0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    background-color: #ebebeb;
     }
 
 header{
     background-color: #EAC926;
     padding: 5%;}
 
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 header div.logo{
-    padding: 10px;
     width: 50%;
 }
 .busqueda{
-    width: 100%;
+    width: 50%;
     display: flex;
+    text-align: center;
     align-items: flex-center;
 }
+
 header form input{
     color: #666;
     padding: 2px;
-    flex-grow: 1;
     width: 80%;
 }
 .lupa{
     font-size: 14px;
     background-color: #ebebeb;
     border: 1px solid #000;
-    width: 5%;
+    width: 10%;
     display: inline;
 }
 
@@ -64,68 +71,85 @@ div.burger-menu{
     padding:10px;
     border:none;
     border-radius: 5px;
+    height: 40px;
+    height: 40px;
 }
 
 .imgbaner{
-    margin: 0px;
-    width: 100vw;
-    box-sizing: border-box;
+    width: 100%;
     }
+    
 .banner{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
+
+
+
+
+
 
 main{
     background-color: #ebebeb;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin: 0px auto;
     
 }
+.ultimavisita, .ofertas{
+    display: flex;
+    flex-wrap:wrap;
+}
+
 .articulo{
     background-color: white;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .cajaArticulo{
+    width: 100%;
     border: solid 1px #ebebeb;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
 }
 
 .imagenarticulo{
     width: 100%;
-    height:100%;
 }
 
-.iconoArticulo{
-    color:#39b54a;
-    font-size: 1em;
-    margin:10px 0px;
-    padding: 5px;
-    border-radius: 15px;
-    border: solid 1px #39b54a;
-    display: inline-block;
-    box-sizing: border-box;
-    
-    
-}
+.cajaArticulo i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        }
 
 
+section p {font-size:16px}
 
 
 h3{font-size:24px}
 
+
 .precio{ 
     font-size:18px;
     font-weight: bold;
+    width: 30%;
 }
 .descuento{
     color: #666;
+    width: 70%;
 }
+
 
 section {
     padding-top: 10px;
@@ -133,9 +157,15 @@ section {
 }
 section p {font-size:16px}
 
+
+
+
+
+
 footer{
-    text-align: center;
-    margin: 0px 10px;
+    text-align: center; 
+    margin: 0px 0px;
+    background-color: white;
 }
 
 .iconoFooter{
@@ -158,7 +188,7 @@ nav{
 
 @media (min-width:361px){
     .descripcion{
-        display:inline;        
+        display:block;        
     }
     .articulo{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -171,12 +201,26 @@ nav{
     div.burger-menu{
         display:none;
     }
+    .listaArticulos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .articulo{
+        width: 47%;
+    }
+    .precio, .descuento{
+        width:50%
+    }
     
+
 }
 
 @media  (min-width: 769px) {
     .top-header{
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -186,11 +230,12 @@ nav{
     }
     .logo{
         flex-wrap:wrap;
-        width: 20%;
+        width: 30%;
     }
     .formapago{
         flex-wrap:wrap;
-        width:30%;
+        justify-content: flex-end;
+        width:20%;
     }
     .navegadores{
         display: flex;
@@ -216,5 +261,9 @@ nav{
     .navegador2 li{
         margin: 0px 10px;
         padding-top:15px;
+    }
+
+    .articulo{
+        width: 22%;
     }
 }
