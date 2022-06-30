@@ -16,7 +16,8 @@
     <header>
         <div class="top-header">
             <div class="logo">
-            <img src="./images/logo-mercado-liebre.svg" atl="logo"  >
+                <a href="home.html">
+                    <img src="./images/logo-mercado-liebre.svg" atl="logo"  ></a>
             </div>
 
             <div class="busqueda">
@@ -53,7 +54,9 @@
             <i class="fa-thin fas fa-bars" ></i>
             </div>
     </header>
-    <main class="register">  
+    <main class="main-register">  
+        <div class="register">
+
         <form action="/" method="GET">
             <h4>Datos personales</h4>
             <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
@@ -108,11 +111,13 @@
                     <input type="password" name="confircontraseña" placeholder="Confirma tu contraseña" required min="6" max="8">
                 </div>
                 <br>
-                  <div>
-                        <button type="resert">Borrar</button>
+                  <div class="botones">
+                        <button class="boton" type="resert">Borrar</button>
                         <br>
-                        <button type="submit">Enviar</button>
+                        <a  href="home.html">
+                            <button class="boton" type="submit">Enviar</button></a>
                   </div>
+            </div>
         </form>
         </main>
    

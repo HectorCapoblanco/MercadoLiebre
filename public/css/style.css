@@ -270,12 +270,28 @@ nav{
 
 /* register.html*/
 
-main .register{
+.main-register{
+    display: flex;
+
+}
+.register{
+    display: flex;
     background-color: #ebebeb;
     line-height: 24px;
     font-size: 12px;
     padding: 20px;
-    margin: 0px;
+    
+}
+
+.boton{
+    width: 86px;
+    height: 15px;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    border: none;
+    text-align: center;
 }
 
 /* login.html*/
