@@ -267,3 +267,50 @@ nav{
         width: 22%;
     }
 }
+
+/* register.html*/
+
+main .register{
+    background-color: #ebebeb;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 20px;
+    margin: 0px;
+}
+
+/* login.html*/
+
+.login{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.boton-enviar, .boton-enviar2{
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    border: none;
+    text-align: center;
+}
+
+@media (min-width:361px){
+    .login{
+        width:290px;
+        justify-content: center;
+        align-items: center;
+    }   
+    .main-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton-enviar, .boton-enviar2{
+        width: 186px;
+    }
+ }

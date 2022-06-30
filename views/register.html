@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="bodyregister">
     <header>
         <div class="top-header">
             <div class="logo">
@@ -53,4 +53,99 @@
             <i class="fa-thin fas fa-bars" ></i>
             </div>
     </header>
+    <main class="register">  
+        <form action="/" method="GET">
+            <h4>Datos personales</h4>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <br>
+            <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
+            <br>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <h4>Fecha de nacimiento<h4>
+            <input type="date" name="fechaNacimiento" >
+            <br>
+            <input type="text" name="domicilio" placeholder="Domicilio">
+            <br>
+            <h4>Perfil de Usuario<h4>
+                <div class="perfil">    
+                    <input type="radio" name="perfil" value="Comprador">
+                    <label>Comprador</label>
+                    <input type="radio" name="perfil" value="Vendedor">
+                    <label>Vendedor</label>
+                </div>
+            <br>
+            <h4>Intereses<h4>
+                <div class="Intereses">
+                    <div>
+                        <input type="checkbox" name="intereses" value="Electro">
+                        <label>Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Moda">
+                        <label>Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Hogar">
+                        <label>Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Jugueterias">
+                        <label>Jugueterias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Vida Sana">
+                        <label>Vida Sana</label>
+                    </div>
+            <br>
+                <div>
+                <h4>Subi tu foto de usuario</h4>
+                    <input type="file" name="imagendePerfil" accept=".jpg">
+                </div>
+                <br>
+                <div>
+                      <input type="password" name="contraseña" placeholder="Password" required min="6" max="8">
+                    <input type="password" name="confircontraseña" placeholder="Confirma tu contraseña" required min="6" max="8">
+                </div>
+                <br>
+                  <div>
+                        <button type="resert">Borrar</button>
+                        <br>
+                        <button type="submit">Enviar</button>
+                  </div>
+        </form>
+        </main>
+   
+        <footer>
+            <section>
+                <div class="iconoFooter">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <p><strong>Pagá con tarjeta o en efectivo</strong></p>
+                <p>Con Mercado Libre Cash, tenés cuotas sin interes con tarjeta o en efectivo en punto de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section>
+                <div class="iconoFooter">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <p><strong>Envió gratis desde $2.500</strong></p>
+                <p>Solo por estar regristrad@ en Mercado Liebre tenes envió gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <div class="iconoFooter">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <p><strong>Seguridad, de principio a fin</strong></p>
+                <p>¿No te gusta?, ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, por que estas siempre protegid@.</p>
+            </section>
+            <br>
+            <div class="copyright">
+                <p><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></p>
+            </div>
+    
+        </footer>    
     </body>
+    </html>  
+
+
+
