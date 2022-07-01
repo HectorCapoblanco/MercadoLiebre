@@ -14,10 +14,19 @@ header{
     background-color: #EAC926;
     padding: 5%;}
 
+    .header-principal{
+        
+        z-index: 10;
+    position: fixed;
+    top: 0px;
+    width:100%;
+}
+
 .top-header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
 }
 
 header div.logo{
@@ -80,11 +89,13 @@ div.burger-menu{
     }
     
 .banner{
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0px;
 }
 
-
+.banner{
+    margin-top: 163.50px;
+}
 
 
 
@@ -214,6 +225,9 @@ nav{
         width:50%
     }
     
+    .banner{
+        margin-top: 204px;
+    }
 
 }
 
@@ -266,6 +280,10 @@ nav{
     .articulo{
         width: 22%;
     }
+    .banner{
+        margin-top: 189px;
+    }
+
 }
 
 /* register.html*/
