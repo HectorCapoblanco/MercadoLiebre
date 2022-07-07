@@ -4,7 +4,7 @@ const app =express ();
 
 app.use(express.static("public"));
 
-app.listen (3000,()=>{console.log("El servidor esta corriendo")});
+app.listen (process.env.PORT || 3000,()=>{console.log("El servidor esta corriendo")});
 
 app.get('/',(req,res)=>{res.sendFile(path.resolve(__dirname,'./views/home.html'))})
 
