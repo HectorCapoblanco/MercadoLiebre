@@ -12,7 +12,8 @@ body{
 
 header{
     background-color: #EAC926;
-    padding: 5%;}
+    padding: 15px;
+}
 
     .header-principal{
         
@@ -94,7 +95,7 @@ div.burger-menu{
 }
 
 .banner{
-    margin-top: 163.50px;
+    margin-top: 154.69px;
 }
 
 
@@ -118,8 +119,7 @@ main{
 }
 .cajaArticulo{
     width: 100%;
-    border: solid 1px #3b3939 ;
-    box-shadow: 2px 2px 5px black;
+    border: solid 1px #ebebeb ;
     padding: 15px;
     box-sizing: border-box;
     display: flex;
@@ -217,6 +217,33 @@ nav{
     .navegadores{
         display: inline;
     }
+    .navegadores{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegador1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navegador2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navegador1 li{
+        margin: 0px 10px;
+        padding-top:15px;
+    } 
+
+    .navegador2 li{
+        margin: 0px 10px;
+        padding-top:15px;
+    }
+
+
 
     div.burger-menu{
         display:none;
@@ -235,7 +262,7 @@ nav{
     }
     
     .banner{
-        margin-top: 204px;
+        margin-top: 181.94px;
     }
 
 }
@@ -290,7 +317,7 @@ nav{
         width: 22%;
     }
     .banner{
-        margin-top: 189px;
+        margin-top: 169.67px;
     }
 .descripcion{
    display: none;
@@ -301,8 +328,8 @@ nav{
     display: block;
 }
 
-.articulo:hover .cajaArticulo{
-    box-shadow: 10px 10px 15px black;
+.articulo:hover {
+    box-shadow: 10px 10px 10px black;
 }
 
 .articulo:hover div i{
@@ -326,7 +353,7 @@ footer section{
 }
 @media  (min-width: 1020px) {
 .banner{
-    margin-top: 234.22px;
+    margin-top: 169.67px;
 }
 }
 
