@@ -118,12 +118,14 @@ main{
 }
 .cajaArticulo{
     width: 100%;
-    border: solid 1px #ebebeb;
+    border: solid 1px #3b3939 ;
+    box-shadow: 2px 2px 5px black;
     padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-wrap:wrap;
     position: relative;
+
 }
 
 .imagenarticulo{
@@ -183,6 +185,10 @@ footer{
     color:blue;
     font-size: 2em;
     margin:40px 0px 10px 0px;
+}
+
+.iconoFooter:hover{
+    color:#EAC926;
 }
 
 .copyright{
@@ -283,7 +289,37 @@ nav{
     .banner{
         margin-top: 189px;
     }
+.descripcion{
+   display: none;
+}
 
+
+.articulo:hover .descripcion {
+    display: block;
+}
+
+.articulo:hover .cajaArticulo{
+    box-shadow: 10px 10px 15px black;
+}
+
+.articulo:hover div i{
+    transform: rotate(-90deg) ; 
+    transition: 2s;
+}
+
+footer .section-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 15px;
+}
+footer section{
+    width: 33.33%;
+}
+.copyright{
+    display: block;
+
+}
 }
 
 /* register.html*/
@@ -304,15 +340,20 @@ nav{
 .boton{
     width: 86px;
     height: 15px;
-    background-color: blue;
+    background-color: white;
     font-weight: bold;
-    color: white;
+    color: black;
     align-items: center;
     border: none;
     text-align: center;
 }
 
-/* login.html*/
+.boton:hover {
+    background-color: blue;
+    color:white
+}
+
+/************** login.html***********************/
 
 .login{
     font-size: 16px;
@@ -325,13 +366,19 @@ nav{
 
 
 .boton-enviar, .boton-enviar2{
-    background-color: blue;
+    background-color: white;
     font-weight: bold;
-    color: white;
+    color: rgb(7, 0, 0);
     align-items: center;
     border: none;
     text-align: center;
 }
+
+.boton-enviar2:hover {
+    background-color:#0022AA;
+    color: white;
+}
+
 
 @media (min-width:361px){
     .login{
